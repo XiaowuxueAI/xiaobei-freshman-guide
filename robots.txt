@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fusoft-freshman-guide.pages.dev/sitemap.xml
+Sitemap: https://xiaowuxueai.github.io/xiaobei-freshman-guide/sitemap.xml
