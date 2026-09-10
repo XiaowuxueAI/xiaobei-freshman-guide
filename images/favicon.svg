@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="小北学长">
+  <rect width="32" height="32" fill="#eaf0ec"/>
+  <rect x="1" y="1" width="30" height="30" fill="none" stroke="#16262a" stroke-width="2"/>
+  <path d="M11 6.5V25.5" stroke="#16262a" stroke-width="1.5"/>
+  <rect x="8.5" y="7" width="5" height="5" fill="#bf4327"/>
+  <rect x="8.5" y="15" width="5" height="5" fill="#eaf0ec" stroke="#16262a" stroke-width="1.5"/>
+  <rect x="8.5" y="23" width="5" height="5" fill="#eaf0ec" stroke="#16262a" stroke-width="1.5"/>
+  <path d="M18 11h7M18 19h5" stroke="#16262a" stroke-width="1.5"/>
+</svg>

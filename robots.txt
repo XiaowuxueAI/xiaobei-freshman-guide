@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fusoft-freshman-guide.pages.dev/sitemap.xml

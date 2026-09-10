@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI 问询窗口 · 小北学长</title>
+    <meta name="description" content="把新生高频问题问给小北学长：报到时间、要带的证件、宿舍空调、军训多久、接站路线、学费住宿费、校园跑、开学清单。本地关键词问答，不联网、不上传输入。">
+    <link rel="canonical" href="https://fusoft-freshman-guide.pages.dev/ai-consult.html">
+    <meta name="theme-color" content="#eaf0ec">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="小北学长（福软迎新版）">
+    <meta property="og:title" content="AI 问询窗口 · 小北学长">
+    <meta property="og:description" content="点一句问一句：报到、证件、宿舍、军训、交通、费用、校园跑、开学清单。">
+    <meta property="og:url" content="https://fusoft-freshman-guide.pages.dev/ai-consult.html">
+    <meta property="og:image" content="https://fusoft-freshman-guide.pages.dev/images/og-cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"WebPage","name":"AI 问询窗口 · 小北学长","url":"https://fusoft-freshman-guide.pages.dev/ai-consult.html","inLanguage":"zh-CN","isPartOf":{"@type":"WebSite","name":"小北学长（福软迎新版）","url":"https://fusoft-freshman-guide.pages.dev/"}}
+    </script>
+  </head>
+  <body data-page="consult">
+    <a class="skip" href="#main">跳到主要内容</a>
+
+    <header class="masthead">
+      <div class="shell masthead__inner">
+        <a class="brand" href="index.html">
+          <img src="images/xiaobei-avatar.webp" width="360" height="360" alt="小北学长头像" decoding="async">
+          <span>小北学长<small>福软迎新版 · 2026</small></span>
+        </a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="站点导航">
+          <ul class="nav__list" data-nav-list>
+            <li><a href="index.html" data-nav="home">首页</a></li>
+            <li><a href="category.html" data-nav="category">攻略站点</a></li>
+            <li><a href="ai-consult.html" data-nav="consult" aria-current="page">AI 问询</a></li>
+            <li><a href="about.html" data-nav="about">关于小北</a></li>
+            <li><a class="nav__cta" href="#follow">关注小北</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+
+      <section class="band opening">
+        <div class="shell">
+          <h1>问询窗口</h1>
+          <p class="opening__lede">把问题丢进来。小北学长按本地的常见问题库回答，答不上来会直接说不知道，并给你对应的攻略站点。</p>
+          <div class="consult consult--spaced">
+            <section class="chat" aria-labelledby="chat-title">
+              <div class="chat__top">
+                <div class="chat__who">
+                  <img src="images/xiaobei-avatar.webp" width="360" height="360" alt="" decoding="async">
+                  <b id="chat-title">小北学长 · 问询窗口</b>
+                </div>
+                <span class="chat__state">本地知识库</span>
+              </div>
+
+              <div class="chat__log" data-chat-log role="log" aria-live="polite" aria-relevant="additions" tabindex="0" aria-label="对话记录">
+                <div class="msg msg--ai">
+                  <p class="msg__who">小北学长</p>
+                  <p class="msg__body">新同学你好，我是小北学长。报到、宿舍、军训、交通、费用、校园跑、开学清单都可以问我。先点几句试试：</p>
+                </div>
+                <div class="chat__suggests" data-chat-suggests>
+                  <button class="chat__suggest" type="button" data-ask="宿舍有空调吗？">宿舍有空调吗？</button>
+                  <button class="chat__suggest" type="button" data-ask="从福州站怎么到学校？">从福州站怎么到学校？</button>
+                  <button class="chat__suggest" type="button" data-ask="新生报到要带什么？">新生报到要带什么？</button>
+                </div>
+              </div>
+
+              <div class="chat__foot">
+                <form class="chat__form" data-chat-form>
+                  <label class="visually-hidden" for="chat-input">输入你的问题</label>
+                  <input class="chat__input" id="chat-input" name="q" type="text" autocomplete="off"
+                  placeholder="比如：宿舍有空调吗？" data-chat-input>
+                  <button class="action" type="submit" data-chat-send>发送</button>
+                </form>
+                <p class="chat__note">
+                  本地关键词匹配，不联网、不上传、不保存你的输入。
+                  <button class="action--link" type="button" data-chat-clear>清空对话</button>
+                </p>
+              </div>
+            </section>
+
+            <aside class="consult__side">
+              <div class="panel">
+                <div class="panel__head">
+                  <h2 class="panel__title">回答的边界</h2>
+                  <span class="label">须知</span>
+                </div>
+                <ul class="check-list">
+                  <li>答案来自本地整理的问题库，不是学校官方回复。</li>
+                  <li>报到时间、收费、住宿、军训等政策，以学校官方通知为准。</li>
+                  <li>问不到的问题会引导你去对应的攻略站点，或提示关注小北后续更新。</li>
+                </ul>
+                <div class="actions actions--spaced">
+                  <a class="action action--quiet" href="#kb">浏览全部问题</a>
+                  <a class="action action--quiet" href="#follow">关注小北学长</a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--ruled" id="kb" aria-labelledby="kb-title">
+        <div class="shell">
+          <div class="band__head band__head--wide">
+            <h2 id="kb-title">问题库 · 32 条</h2>
+            <p class="band__deck">这就是问询窗口在用的那份问题库。点开看答案，也可以把任意一条直接问给小北。</p>
+          </div>
+
+          <div class="kb">
+            <details class="kb__item" data-kb data-kw="几个校区,校区,文岭,文武砂,华林,产业园" data-station="st-traffic">
+              <summary class="kb__q"><b>01</b><span>福软有几个校区？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>常见答疑里的口径是：文岭校本部、文武砂校区、华林梦想科技产业园。2026 级新生的校区分配以学校官方通知为准；未来技术产业学院在华林梦想科技产业园校区，其他学院在文岭校本部。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="我在哪个校区,哪个校区,专业,分配" data-station="st-register">
+              <summary class="kb__q"><b>02</b><span>我在哪个校区？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>要看你的专业和录取通知书。常见口径是：未来技术产业学院在华林梦想科技产业园校区，其他学院在文岭校本部，最终以学校官方通知为准。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="报到带什么,带什么,证件,材料,要带" data-station="st-checklist">
+              <summary class="kb__q"><b>03</b><span>新生报到要带什么？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>建议带录取通知书、身份证及复印件、档案、团员 / 党籍材料、一寸 / 二寸证件照。完整的分组清单在「开学清单」那一站，可以边收拾边勾选。</p>
+                <a href="category.html#st-checklist">看开学清单整站 →</a>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="开学要带什么,开学清单,物品,行李,带什么" data-station="st-checklist">
+              <summary class="kb__q"><b>04</b><span>开学要带什么？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>证件、床垫、衣架、插排、常用药、雨伞、水杯等。更完整的分组清单可以看「开学清单」那一站，也能在装包清单里逐项勾选。</p>
+                <a href="category.html#checklist">去勾选 42 项装包清单 →</a>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="报到时间,什么时候,几号,几点,报到日期" data-station="st-register">
+              <summary class="kb__q"><b>05</b><span>新生报到时间是什么时候？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>以录取通知书为准。新生报到通常在 9 月中上旬，08:00-18:00 报到，具体时间请以学校官方通知为准。不能按时报到时，需要提前联系招生办请假。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="现场流程,办哪几步,步骤,流程,手续" data-station="st-register">
+              <summary class="kb__q"><b>06</b><span>报到现场要办哪几步？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>常见流程是：缴费确认 → 交通知书 → 分配宿舍 → 交注册单 → 完成报到。现场如有调整，按迎新点和工作人员指引办理。</p>
+                <a href="index.html">看首页的 5 步行程轴 →</a>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="学费,住宿费,费用,多少钱,缴费,收费" data-station="st-register">
+              <summary class="kb__q"><b>07</b><span>学费住宿费多少？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>普通专业学费可先按 12500-13800 元区间参考，实际以录取通知书为准；住宿费可按四人 1600、五人 1400、六人 1200 / 年参考。收费标准请以学校官方通知为准。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="交哪些费,教材费,体检费,军训费,线上缴费,费用明细" data-station="st-register">
+              <summary class="kb__q"><b>08</b><span>报到要交哪些费用？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>学费、住宿费、教材费、体检费、军训费等项目以录取通知书和学校缴费通知为准；建议按通知书要求线上缴费，报到效率会更高。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="档案,拆封,密封,团籍" data-station="st-tips">
+              <summary class="kb__q"><b>09</b><span>学生档案要拆封吗？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>不要私自拆封。档案按要求密封带到学校上交，团员或党籍材料也一起带好。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="宿舍条件,几人间,卫浴,热水,宿舍怎么样" data-station="st-dorm">
+              <summary class="kb__q"><b>10</b><span>宿舍条件怎么样？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>宿舍以 6 人间为主，通常配有空调、独立卫浴和 24 小时热水。不同楼栋和实际分配可能不同，具体以实际分配为准。</p>
+                <a href="category.html#st-dorm">看宿舍生活整站 →</a>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="空调,宿舍空调" data-station="st-dorm">
+              <summary class="kb__q"><b>11</b><span>宿舍有空调吗？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>宿舍通常有空调。不同楼栋和实际使用规则以学校宿舍安排为准。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="吹风机,电器,插排,大功率,卷发棒,电热锅" data-station="st-dorm">
+              <summary class="kb__q"><b>12</b><span>宿舍能用吹风机吗？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>可以使用合格安全插排；吹风机等小功率电器按宿舍规定使用，禁止违规使用大功率电器。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="门禁,晚归,几点关门,作息" data-station="st-dorm">
+              <summary class="kb__q"><b>13</b><span>门禁和晚归怎么办？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>门禁按学校规定执行，晚归通常需要登记。建议开学后第一时间确认本楼栋规则。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="快递,地址,寄,取件,菜鸟驿站,收件" data-station="st-dorm">
+              <summary class="kb__q"><b>14</b><span>快递地址怎么写？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>可写福建省福州市长乐区滨海大道 999 号福州软件职业技术学院。校内有菜鸟驿站，具体取件点以校内实际安排为准。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="外卖,能点外卖吗" data-station="st-food">
+              <summary class="kb__q"><b>15</b><span>外卖能送到宿舍吗？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>外卖通常可以送到宿舍附近，具体收取方式以学校和宿舍楼管理要求为准。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="食堂,吃饭,多少钱,饭钱,价格" data-station="st-food">
+              <summary class="kb__q"><b>16</b><span>食堂吃饭大概多少钱？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>校内有食堂，菜品较齐全，一顿饭通常 10-15 元左右，仅供参考。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="超市,奶茶,支付,微信支付,支付宝" data-station="st-food">
+              <summary class="kb__q"><b>17</b><span>校园里有超市和奶茶店吗？怎么付款？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>校内有超市和奶茶店，可以先观察营业时间和常用位置。食堂和商户通常支持微信、支付宝等常见支付方式。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="军训多久,几天,军训时间" data-station="st-military">
+              <summary class="kb__q"><b>18</b><span>军训多久？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>军训一般 10 天左右，地点通常在校内。具体时长和安排以学校当年通知为准。</p>
+                <a href="category.html#st-military">看军训攻略整站 →</a>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="军训带手机,手机,训练" data-station="st-military">
+              <summary class="kb__q"><b>19</b><span>军训可以带手机吗？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>休息时通常可以使用手机，训练期间要按现场要求管理。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="军训请假,身体,生病,免训,请假" data-station="st-military">
+              <summary class="kb__q"><b>20</b><span>军训身体不适能请假吗？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>身体原因可凭证明请假。有基础疾病或特殊情况的同学，建议提前准备材料，并主动和辅导员说明。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="福州站,怎么到,滨海快线,火车站" data-station="st-traffic">
+              <summary class="kb__q"><b>21</b><span>从福州站怎么到学校？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>到文岭校区可乘滨海快线到文岭站，随后步行到校；出行前建议再次用地图确认。</p>
+                <a href="category.html#st-traffic">看校园交通整站 →</a>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="福州南站,5号线,帝封江,换乘" data-station="st-traffic">
+              <summary class="kb__q"><b>22</b><span>从福州南站怎么走？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>可乘 5 号线到帝封江，再换乘滨海快线到文岭站。出行前建议再次用地图确认。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="接站,大巴,接车,接站安排" data-station="st-traffic">
+              <summary class="kb__q"><b>23</b><span>有接站大巴吗？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>福州站、福州南站通常会安排接站大巴，具体时间以学校通知为准。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="课表,教务系统,在哪看" data-station="st-course">
+              <summary class="kb__q"><b>24</b><span>课表在哪里看？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>课程表一般在学校教务系统查看，开学后会引导大家注册和使用。</p>
+                <a href="category.html#st-course">看选课攻略整站 →</a>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="请假流程,怎么请假,考勤,缺勤" data-station="st-course">
+              <summary class="kb__q"><b>25</b><span>请假怎么请？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>上课和军训请假都要按流程申请：向辅导员说明原因并提交证明。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="挂科,补考,重修,成绩" data-station="st-course">
+              <summary class="kb__q"><b>26</b><span>挂科了怎么办？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>按学校安排参加补考或重修。平时成绩重要，通常会占总成绩一定比例。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="校园跑,体测,2公里,跑步" data-station="st-course">
+              <summary class="kb__q"><b>27</b><span>校园跑怎么弄？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>大一、大二通常会有校园跑要求，每次 2 公里；体测必须参加。具体规则以学校当年通知为准。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="转专业,换专业" data-station="st-course">
+              <summary class="kb__q"><b>28</b><span>可以转专业吗？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>转专业通常需要按学校规定时间申请，且第一学期不能有挂科才可以申请。具体要求以学校当年政策为准。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="图书馆,自习,借书" data-station="st-club">
+              <summary class="kb__q"><b>29</b><span>图书馆能自习和借书吗？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>图书馆开放，可自习、有插座、可借书。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="社团,招新,社团活动" data-station="st-club">
+              <summary class="kb__q"><b>30</b><span>什么时候社团招新？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>社团一般在开学后、军训结束后陆续招新。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="奖学金,助学金,评定,奖助学金" data-station="st-club">
+              <summary class="kb__q"><b>31</b><span>奖助学金怎么评？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>学校有助学金和奖学金，通常按成绩和家庭情况评定，以学院和学校当年通知为准。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+
+            <details class="kb__item" data-kb data-kw="新生群,群号,加群" data-station="st-club">
+              <summary class="kb__q"><b>32</b><span>新生群从哪里加？</span><span class="kb__marker" aria-hidden="true"></span></summary>
+              <div class="kb__a">
+                <p>新生群号通常在录取通知书内。注意识别来源，优先以官方渠道为准。</p>
+                <button class="action--link" type="button" data-ask-from-item>把这一句问给小北</button>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="follow" aria-labelledby="follow-title">
+        <div class="shell">
+          <div class="band__head band__head--wide">
+            <h2 id="follow-title">关注小北学长</h2>
+            <p class="band__deck">问题库会继续补。报到提醒、宿舍避坑和开学清单的更新，都在抖音和微信上发。</p>
+          </div>
+          <div class="follow">
+            <figure class="plate">
+              <img src="images/douyin-qr.webp" width="1125" height="1680" alt="小北学长抖音二维码：扫码关注小北学长（福软迎新版）" loading="lazy" decoding="async">
+              <figcaption class="plate__cap">
+                <b>抖音 · 小北学长（福软迎新版）</b>
+                <span>抖音号 25408200778</span>
+                <small>扫码关注，看报到提醒和宿舍避坑更新。</small>
+              </figcaption>
+            </figure>
+            <figure class="plate">
+              <img src="images/wechat-qr.webp" width="820" height="1220" alt="小北学长微信二维码：扫码添加小北学长" loading="lazy" decoding="async">
+              <figcaption class="plate__cap">
+                <b>微信 · 小北学长</b>
+                <span>福建 南平</span>
+                <small>扫码添加，问新生常见问题。</small>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="colophon">
+      <div class="shell">
+        <div class="colophon__grid">
+          <div class="colophon__brand">
+            <h2>小北学长</h2>
+            <p>问询窗口是前端本地的关键词问答，不接外部 API，也不保存你的输入。政策类问题请以学校官方通知为准。</p>
+            <p><span class="stamp stamp--night">仅供参考 · 以官方为准</span></p>
+          </div>
+          <nav class="colophon__links" aria-label="页脚导航">
+            <h3 class="label label--night">站点</h3>
+            <a href="index.html">首页 · 行程表</a>
+            <a href="category.html">攻略站点 · 9 站</a>
+            <a href="category.html#checklist">行前装包清单</a>
+            <a href="ai-consult.html#kb">问题库 · 32 条</a>
+            <a href="about.html">关于小北 / 声明</a>
+          </nav>
+          <div>
+            <h3 class="label label--night">关注小北学长</h3>
+            <div class="follow follow--spaced">
+              <figure class="plate plate--night">
+                <img src="images/douyin-qr.webp" width="1125" height="1680" alt="小北学长抖音二维码" loading="lazy" decoding="async">
+                <figcaption class="plate__cap">
+                  <b>抖音 · 25408200778</b>
+                  <span>小北学长（福软迎新版）</span>
+                </figcaption>
+              </figure>
+              <figure class="plate plate--night">
+                <img src="images/wechat-qr.webp" width="820" height="1220" alt="小北学长微信二维码" loading="lazy" decoding="async">
+                <figcaption class="plate__cap">
+                  <b>微信 · 小北学长</b>
+                  <span>福建 南平</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <dl class="billing">
+          <div class="billing__row"><dt>抖音</dt><dd>小北学长（福软迎新版）<em> · 25408200778</em></dd></div>
+          <div class="billing__row"><dt>微信</dt><dd>小北学长<em> · 福建 南平</em></dd></div>
+          <div class="billing__row"><dt>公众号</dt><dd><em>名称待补充</em></dd></div>
+          <div class="billing__row"><dt>邮箱</dt><dd><em>待补充</em></dd></div>
+          <div class="billing__row"><dt>声明</dt><dd>本站内容由「小北学长」整理，仅供参考<em> · 涉及报到、收费、住宿、军训等政策信息，以学校官方通知为准</em></dd></div>
+        </dl>
+
+        <div class="colophon__base">
+          <span>© 2026 小北学长（福软迎新版）</span>
+          <span><a href="about.html#policy">网站声明与隐私说明</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/site.js"></script>
+    <script src="js/ai-consult.js"></script>
+  </body>
+</html>
+
+
+
